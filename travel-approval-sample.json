@@ -1,0 +1,231 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "Container",
+            "bleed": true,
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "TRAVEL REQUEST",
+                                    "wrap": true,
+                                    "size": "Large",
+                                    "weight": "Bolder",
+                                    "color": "Accent"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "PENDING",
+                                    "wrap": true,
+                                    "color": "Warning",
+                                    "weight": "Bolder",
+                                    "size": "Large",
+                                    "isSubtle": true
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "style": "Person",
+                                    "size": "Medium",
+                                    "url": "",
+                                    "altText": ""
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Trip Title",
+                                    "wrap": true,
+                                    "size": "Large",
+                                    "weight": "Bolder"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        }
+                    ],
+                    "style": "default"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "FactSet",
+                    "facts": [
+                        {
+                            "title": "Reason for travel",
+                            "value": "Value 1"
+                        },
+                        {
+                            "title": "Requester",
+                            "value": "Value 2"
+                        },
+                        {
+                            "title": "Destination",
+                            "value": "Value 3"
+                        },
+                        {
+                            "title": "Travel start date",
+                            "value": "Value 4"
+                        },
+                        {
+                            "title": "Travel end date",
+                            "value": "Value 5"
+                        },
+                        {
+                            "title": "Travel duration",
+                            "value": "Value 6"
+                        },
+                        {
+                            "title": "Estimated airfare",
+                            "value": "Value 7"
+                        },
+                        {
+                            "title": "Estimated hotel cost",
+                            "value": "Value 8"
+                        }
+                    ]
+                }
+            ],
+            "separator": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.ShowCard",
+                    "card": {
+                        "type": "AdaptiveCard",
+                        "version": "1.0",
+                        "body": [
+                            {
+                                "type": "TextBlock",
+                                "text": "Comments",
+                                "wrap": true
+                            },
+                            {
+                                "type": "Input.Text",
+                                "id": "comments1",
+                                "placeholder": "Enter comments",
+                                "isMultiline": true,
+                                "maxLength": 2048
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "type": "Action.Submit",
+                                "data": {
+                                    "Environment": "",
+                                    "ApprovalTitle": "",
+                                    "ApprovalLink": "",
+                                    "ApprovalName": "",
+                                    "ItemLink": "",
+                                    "ItemLinkDescription": "",
+                                    "OnBehalfOfNotice": "",
+                                    "CreatorName": "",
+                                    "CreatorEmail": "",
+                                    "CreationTime": "\"h\"",
+                                    "MessageTitle": "",
+                                    "Details": "",
+                                    "Options": [
+                                        "Approve",
+                                        "Reject"
+                                    ],
+                                    "SelectedOption": "Approve",
+                                    "ActionType": 1
+                                },
+                                "title": "Submit"
+                            }
+                        ]
+                    },
+                    "title": "Approve"
+                },
+                {
+                    "type": "Action.ShowCard",
+                    "card": {
+                        "type": "AdaptiveCard",
+                        "version": "1.0",
+                        "body": [
+                            {
+                                "type": "TextBlock",
+                                "text": "Comments",
+                                "wrap": true
+                            },
+                            {
+                                "type": "Input.Text",
+                                "id": "comments2",
+                                "placeholder": "Enter comments",
+                                "isMultiline": true,
+                                "maxLength": 2048
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "type": "Action.Submit",
+                                "data": {
+                                    "Environment": "",
+                                    "ApprovalTitle": "",
+                                    "ApprovalLink": "",
+                                    "ApprovalName": "",
+                                    "ItemLink": "",
+                                    "ItemLinkDescription": "",
+                                    "OnBehalfOfNotice": "",
+                                    "CreatorName": "",
+                                    "CreatorEmail": "",
+                                    "CreationTime": "\"h\"",
+                                    "MessageTitle": "",
+                                    "Details": "",
+                                    "Options": [
+                                        "Approve",
+                                        "Reject"
+                                    ],
+                                    "SelectedOption": "Reject",
+                                    "ActionType": 1
+                                },
+                                "title": "Submit"
+                            }
+                        ]
+                    },
+                    "title": "Reject"
+                }
+            ]
+        }
+    ]
+}

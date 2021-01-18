@@ -1,0 +1,101 @@
+{
+    "type": "ActionSet",
+    "actions": [
+        {
+            "type": "Action.ShowCard",
+            "card": {
+                "type": "AdaptiveCard",
+                "version": "1.0",
+                "body": [
+                    {
+                        "type": "TextBlock",
+                        "text": "Comments",
+                        "wrap": true
+                    },
+                    {
+                        "type": "Input.Text",
+                        "id": "comments1",
+                        "placeholder": "Enter comments",
+                        "isMultiline": true,
+                        "maxLength": 2048
+                    }
+                ],
+                "actions": [
+                    {
+                        "type": "Action.Submit",
+                        "data": {
+                            "Environment": "",
+                            "ApprovalTitle": "",
+                            "ApprovalLink": "",
+                            "ApprovalName": "",
+                            "ItemLink": "",
+                            "ItemLinkDescription": "",
+                            "OnBehalfOfNotice": "",
+                            "CreatorName": "",
+                            "CreatorEmail": "",
+                            "CreationTime": "\"\"",
+                            "MessageTitle": "",
+                            "Details": "",
+                            "Options": [
+                                "Approve",
+                                "Reject"
+                            ],
+                            "SelectedOption": "Approve",
+                            "ActionType": 1
+                        },
+                        "title": "Submit"
+                    }
+                ]
+            },
+            "title": "Approve"
+        },
+        {
+            "type": "Action.ShowCard",
+            "card": {
+                "type": "AdaptiveCard",
+                "version": "1.0",
+                "body": [
+                    {
+                        "type": "TextBlock",
+                        "text": "Comments",
+                        "wrap": true
+                    },
+                    {
+                        "type": "Input.Text",
+                        "id": "comments2",
+                        "placeholder": "Enter comments",
+                        "isMultiline": true,
+                        "maxLength": 2048
+                    }
+                ],
+                "actions": [
+                    {
+                        "type": "Action.Submit",
+                        "data": {
+                            "Environment": "",
+                            "ApprovalTitle": "",
+                            "ApprovalLink": "",
+                            "ApprovalName": "",
+                            "ItemLink": "",
+                            "ItemLinkDescription": "",
+                            "OnBehalfOfNotice": "",
+                            "CreatorName": "",
+                            "CreatorEmail": "",
+                            "CreationTime": "\"\"",
+                            "MessageTitle": "",
+                            "Details": "",
+                            "Options": [
+                                "Approve",
+                                "Reject"
+                            ],
+                            "SelectedOption": "Reject",
+                            "ActionType": 1
+                        },
+                        "title": "Submit"
+                    }
+                ]
+            },
+            "title": "Reject"
+        }
+    ]
+}

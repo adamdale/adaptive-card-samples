@@ -1,0 +1,198 @@
+{
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string"
+        },
+        "version": {
+            "type": "string"
+        },
+        "body": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "altText": {
+                        "type": "string"
+                    },
+                    "size": {
+                        "type": "string"
+                    },
+                    "weight": {
+                        "type": "string"
+                    },
+                    "text": {
+                        "type": "string"
+                    },
+                    "wrap": {
+                        "type": "boolean"
+                    },
+                    "facts": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "value"
+                            ]
+                        }
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "actions": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "card": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "version": {
+                                            "type": "string"
+                                        },
+                                        "body": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "text": {
+                                                        "type": "string"
+                                                    },
+                                                    "wrap": {
+                                                        "type": "boolean"
+                                                    },
+                                                    "id": {
+                                                        "type": "string"
+                                                    },
+                                                    "placeholder": {
+                                                        "type": "string"
+                                                    },
+                                                    "isMultiline": {
+                                                        "type": "boolean"
+                                                    },
+                                                    "maxLength": {
+                                                        "type": "integer"
+                                                    }
+                                                },
+                                                "required": [
+                                                    "type"
+                                                ]
+                                            }
+                                        },
+                                        "actions": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "data": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "Environment": {
+                                                                "type": "string"
+                                                            },
+                                                            "ApprovalTitle": {
+                                                                "type": "string"
+                                                            },
+                                                            "ApprovalLink": {
+                                                                "type": "string"
+                                                            },
+                                                            "ApprovalName": {
+                                                                "type": "string"
+                                                            },
+                                                            "ItemLink": {
+                                                                "type": "string"
+                                                            },
+                                                            "ItemLinkDescription": {
+                                                                "type": "string"
+                                                            },
+                                                            "OnBehalfOfNotice": {
+                                                                "type": "string"
+                                                            },
+                                                            "CreatorName": {
+                                                                "type": "string"
+                                                            },
+                                                            "CreatorEmail": {
+                                                                "type": "string"
+                                                            },
+                                                            "CreationTime": {
+                                                                "type": "string"
+                                                            },
+                                                            "MessageTitle": {
+                                                                "type": "string"
+                                                            },
+                                                            "Details": {
+                                                                "type": "string"
+                                                            },
+                                                            "Options": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "SelectedOption": {
+                                                                "type": "string"
+                                                            },
+                                                            "ActionType": {
+                                                                "type": "integer"
+                                                            }
+                                                        }
+                                                    },
+                                                    "title": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "required": [
+                                                    "type",
+                                                    "data",
+                                                    "title"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "title": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "type",
+                                "card",
+                                "title"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "type"
+                ]
+            }
+        }
+    }
+}
